@@ -9,9 +9,7 @@ public class PlayerControler : MonoBehaviour
 	public Rigidbody2D vector;
 	public float MaxVelocidade = 10;
 	public float moveForce;
-    public Transform groundCheck;
 
-    private bool grounded = false;
 	private float walk = 5;
 	private float axis;
 	private float hForce = 1;
@@ -32,7 +30,7 @@ public class PlayerControler : MonoBehaviour
             vector.velocity = new Vector2(Math.Sign(vector.velocity.x) * MaxVelocidade, vector.velocity.y);
 
         }
-		vector.AddForce(axis*Vector2.up/10, ForceMode2D.Impulse);
+		vector.AddForce(axis*Vector2.up/15, ForceMode2D.Impulse);
 
 	}
 
