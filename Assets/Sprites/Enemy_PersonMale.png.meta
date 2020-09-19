@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 42195ca4651235c408db3196ca029990
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1485904467463715007
+    second: Enemy_PersonMale_0
+  - first:
+      213: -2785969424594424258
+    second: Enemy_PersonMale_1
+  - first:
+      213: 5056477876486688546
+    second: Enemy_PersonMale_2
+  - first:
+      213: 8907410873228003155
+    second: Enemy_PersonMale_3
+  - first:
+      213: 2963768533025858835
+    second: Enemy_PersonMale_4
+  - first:
+      213: -6894081845722093613
+    second: Enemy_PersonMale_5
+  - first:
+      213: 207886356072227913
+    second: Enemy_PersonMale_6
+  - first:
+      213: 6772626133850006831
+    second: Enemy_PersonMale_7
+  - first:
+      213: -5481471612806662145
+    second: Enemy_PersonMale_8
+  - first:
+      213: -282210197720395802
+    second: Enemy_PersonMale_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +71,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +103,243 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_PersonMale_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 710
+        width: 165
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb837519d3efe9410800000000000000
+      internalID: 1485904467463715007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 711
+        width: 153
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e23fba19f3659d0800000000000000
+      internalID: -2785969424594424258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 713
+        width: 155
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f4c9a96d73c2640800000000000000
+      internalID: 5056477876486688546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 714
+        width: 162
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3570537eefa7d9b70800000000000000
+      internalID: 8907410873228003155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_4
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 715
+        width: 148
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315ac7f27cb612920800000000000000
+      internalID: 2963768533025858835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 711
+        width: 162
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7e345761d4350a0800000000000000
+      internalID: -6894081845722093613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_6
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 713
+        width: 163
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944e5571a8f82e200800000000000000
+      internalID: 207886356072227913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_7
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 714
+        width: 149
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2528a8f5933dfd50800000000000000
+      internalID: 6772626133850006831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_8
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 715
+        width: 160
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff775483c96ede3b0800000000000000
+      internalID: -5481471612806662145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_PersonMale_9
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 713
+        width: 148
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef02e40253651cf0800000000000000
+      internalID: -282210197720395802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
