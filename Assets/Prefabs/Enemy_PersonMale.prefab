@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5308718058818615922}
   - component: {fileID: 3133668659488902628}
+  - component: {fileID: -2310608515921867273}
   m_Layer: 0
   m_Name: Enemy_PersonMale
   m_TagString: Untagged
@@ -82,3 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &-2310608515921867273
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015325437388765688}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.029776437, y: -0.059553046}
+  m_Size: {x: 1.2331285, y: 3.1723838}
+  m_Direction: 0

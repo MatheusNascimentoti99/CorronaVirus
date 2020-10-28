@@ -1,42 +1,57 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
 {
-	public Animator animator;
-	public Rigidbody2D vector;
-	public float MaxVelocidade = 10;
-	public float moveForce;
+    private Animator animator;
+    private Rigidbody2D m_rigidbody;
+    public float MaxVelocidade = 10;
+    public float moveForce;
+    public float curve;
 
-	private float walk = 5;
-	private float axis;
-	private float hForce = 1;
-	// Use this for initialization
-	void Start()
-	{
-	}
+    private float walk = 5;
+    private float axis;
 
-	void FixedUpdate()
-	{
+    // Use this for initialization
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+        m_rigidbody = GetComponent<Rigidbody2D>();
 
-		animator.SetFloat("Speed", vector.velocity.x);
-		axis = Input.GetAxis ("Vertical")* Time.deltaTime;
-        vector.AddForce(Vector2.right * hForce * (vector.velocity.x < walk ? moveForce : moveForce/(vector.velocity.x/2)));
-        if (vector.velocity.x > MaxVelocidade)
-		{
-				
-            vector.velocity = new Vector2(Math.Sign(vector.velocity.x) * MaxVelocidade, vector.velocity.y);
+
+    }
+
+    void FixedUpdate()
+    {
+
+        MoveForwards();
+        Curve();
+
+    }
+
+    private void Curve()
+    {
+        axis = Input.GetAxis("Vertical") * Time.deltaTime;
+        Vector2 aux = new Vector2(transform.position.x, transform.position.y + axis * curve * Time.deltaTime);
+        transform.position = aux;
+    }
+
+    private void MoveForwards()
+    {
+        animator.SetFloat("Speed", m_rigidbody.velocity.x);
+        m_rigidbody.AddForce(Vector2.right * Time.deltaTime * moveForce * (m_rigidbody.velocity.x < walk ? moveForce : moveForce / (m_rigidbody.velocity.x / 2)));
+        if (m_rigidbody.velocity.x > MaxVelocidade)
+        {
+
+            m_rigidbody.velocity = new Vector2(Math.Sign(m_rigidbody.velocity.x) * MaxVelocidade, m_rigidbody.velocity.y);
 
         }
-		vector.AddForce(axis*Vector2.up/3, ForceMode2D.Impulse);
+    }
 
-	}
 
-	// Update is called once per frame
-	void Update()
-	{
-	}
+    // Update is called once per frame
+    void Update()
+    {
+    }
 
 }

@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Menu : MonoBehaviour
 {
     public static Menu menu;
-    
-    void Awake(){
-        if(menu == null)
+
+    void Awake()
+    {
+        if (menu == null)
         {
             menu = this;
         }
@@ -16,15 +15,18 @@ public class Menu : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void Start(){
+    public void Start()
+    {
         Screen.orientation = ScreenOrientation.Portrait;
     }
-    
-    public void StartLevel(){
+
+    public void StartLevel()
+    {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 
-    public void ContinueLevel(){
+    public void ContinueLevel()
+    {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 }
